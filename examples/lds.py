@@ -46,7 +46,7 @@ b = npr.randn(D)
 true_lds.dynamics.As[0] = A
 true_lds.dynamics.bs[0] = b
 
-_, x, y = true_lds.sample(T)
+x, y = true_lds.sample(T)
 
 print("Fitting LDS with SVI")
 
